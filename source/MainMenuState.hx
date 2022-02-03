@@ -274,8 +274,6 @@ class MainMenuState extends MusicBeatState
 						{
 							new FlxTimer().start(0.7, function(tmr:FlxTimer)
 							{
-								var video:MP4Handler = new MP4Handler();
-								video.playMP4(Paths.video('CUTSCENE'));
 								 video.finishCallback = function()
 								{
 									LoadingState.loadAndSwitchState(new PlayState(), true);
