@@ -274,7 +274,6 @@ class MainMenuState extends MusicBeatState
 						{
 							new FlxTimer().start(0.7, function(tmr:FlxTimer)
 							{
-								 video.finishCallback = function()
 								{
 									LoadingState.loadAndSwitchState(new PlayState(), true);
 								}
